@@ -39,6 +39,8 @@ _import_structure = {
     "gflownet_trainer": ["GFlowNetTrainer"],
     "gkd_config": ["GKDConfig"],
     "gkd_trainer": ["GKDTrainer"],
+    "grpo_config": ["GRPOConfig"],
+    "grpo_trainer": ["GRPOTrainer"],
     "iterative_sft_trainer": ["IterativeSFTTrainer"],
     "judges": [
         "AllTrueJudge",
@@ -111,6 +113,8 @@ if TYPE_CHECKING:
     from .gflownet_trainer import GFlowNetTrainer
     from .gkd_config import GKDConfig
     from .gkd_trainer import GKDTrainer
+    from .grpo_config import GRPOConfig
+    from .grpo_trainer import GRPOTrainer
     from .iterative_sft_trainer import IterativeSFTTrainer
     from .judges import (
         AllTrueJudge,

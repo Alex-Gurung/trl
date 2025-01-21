@@ -36,6 +36,10 @@ _import_structure = {
         "is_deepspeed_available",
         "is_diffusers_available",
         "is_llm_blender_available",
+        "is_mergekit_available",
+        "is_rich_available",
+        "is_unsloth_available",
+        "is_vllm_available",
     ],
     "models": [
         "SUPPORTED_ARCHITECTURES",
@@ -67,6 +71,8 @@ _import_structure = {
         "GFlowNetTrainer",
         "GKDConfig",
         "GKDTrainer",
+        "GRPOConfig",
+        "GRPOTrainer",
         "HfPairwiseJudge",
         "IterativeSFTTrainer",
         "KTOConfig",
@@ -128,7 +134,15 @@ if TYPE_CHECKING:
     )
     from .environment import TextEnvironment, TextHistory
     from .extras import BestOfNSampler
-    from .import_utils import is_deepspeed_available, is_diffusers_available, is_llm_blender_available
+    from .import_utils import (
+        is_deepspeed_available,
+        is_diffusers_available,
+        is_llm_blender_available,
+        is_mergekit_available,
+        is_rich_available,
+        is_unsloth_available,
+        is_vllm_available,
+    )
     from .models import (
         SUPPORTED_ARCHITECTURES,
         AutoModelForCausalLMWithValueHead,
@@ -160,6 +174,8 @@ if TYPE_CHECKING:
         GFlowNetTrainer,
         GKDConfig,
         GKDTrainer,
+        GRPOConfig,
+        GRPOTrainer,
         HfPairwiseJudge,
         IterativeSFTTrainer,
         KTOConfig,
