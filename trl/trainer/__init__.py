@@ -29,11 +29,14 @@ _import_structure = {
         "SyncRefModelCallback",
         "WinRateCallback",
     ],
+    "customreward_ppo_trainer": ["CustomRewardPPOTrainer"],
     "cpo_config": ["CPOConfig"],
     "cpo_trainer": ["CPOTrainer"],
     "ddpo_config": ["DDPOConfig"],
     "dpo_config": ["DPOConfig", "FDivergenceConstants", "FDivergenceType"],
     "dpo_trainer": ["DPOTrainer"],
+    "gflownet_config": ["GFlowNetConfig"],
+    "gflownet_trainer": ["GFlowNetTrainer"],
     "gkd_config": ["GKDConfig"],
     "gkd_trainer": ["GKDTrainer"],
     "iterative_sft_trainer": ["IterativeSFTTrainer"],
@@ -98,11 +101,14 @@ if TYPE_CHECKING:
         SyncRefModelCallback,
         WinRateCallback,
     )
+    from .customreward_ppo_trainer import CustomRewardPPOTrainer
     from .cpo_config import CPOConfig
     from .cpo_trainer import CPOTrainer
     from .ddpo_config import DDPOConfig
     from .dpo_config import DPOConfig, FDivergenceConstants, FDivergenceType
     from .dpo_trainer import DPOTrainer
+    from .gflownet_config import GFlowNetConfig
+    from .gflownet_trainer import GFlowNetTrainer
     from .gkd_config import GKDConfig
     from .gkd_trainer import GKDTrainer
     from .iterative_sft_trainer import IterativeSFTTrainer
